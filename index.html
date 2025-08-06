@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Calculadora Vida Útil">
 </head>
 
 <body>
@@ -37,7 +38,7 @@ resultado = document.getElementById("resultado");
 function updateResultado(){
     if (inputFecha.value != "" && inputUtil.value != ""){
         fechaVenc = addDays(inputFecha.value, parseInt(inputUtil.value))
-        resultadotitle.innerHTML = "Fecha de vencimiento:"
+        resultadotitle.innerHTML = "Fecha de Vencimiento:"
         resultado.innerHTML = fechaVenc.getUTCDate()+" "+getMonth(fechaVenc.getUTCMonth())+" "+fechaVenc.getUTCFullYear();
     }
 }
