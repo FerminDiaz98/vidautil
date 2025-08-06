@@ -37,7 +37,7 @@ resultado = document.getElementById("resultado");
 function updateResultado(){
     if (inputFecha.value != "" && inputUtil.value != ""){
         fechaVenc = addDays(inputFecha.value, parseInt(inputUtil.value))
-        resultadotitle.innerHTML = "Fecha de vencimiento estimada"
+        resultadotitle.innerHTML = "Fecha de vencimiento:"
         resultado.innerHTML = fechaVenc.getUTCDate()+" "+getMonth(fechaVenc.getUTCMonth())+" "+fechaVenc.getUTCFullYear();
     }
 }
